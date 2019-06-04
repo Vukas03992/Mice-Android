@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="Actionbar">
+        <item name="android:background">@drawable/background_actionbar</item>
+    </style>
+
+    <style name="BoardFragmentToolbar">
+        <item name="android:background">@drawable/background_toolbar</item>
+    </style>
+
+    <style name="ActionBarTitle">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/action_bar_title</item>
+        <item name="android:fontFamily">@font/meriendaone_regular</item>
+    </style>
+
+    <!--Name fragment styles-->
+    <style name="NameFragmentTitle">
+        <item name="android:textSize">@dimen/name_fragment_title_text</item>
+        <item name="android:textColor">@color/name_fragment_title</item>
+        <item name="android:fontFamily">@font/meriendaone_regular</item>
+    </style>
+
+    <style name="NameFragmentPlayerName">
+        <item name="android:textSize">@dimen/name_fragment_player_name_text</item>
+        <item name="android:textColor">@color/name_fragment_player_name_edit_text</item>
+        <item name="android:textColorHint">@color/name_fragment_player_name_edit_text_hint</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!--Menu fragment styles-->
+    <style name="MenuFragmentMenuItem">
+        <item name="android:textColor">@color/menu_fragment_text</item>
+        <item name="android:textSize">@dimen/menu_fragment_text</item>
+        <item name="android:fontFamily">@font/meriendaone_regular</item>
+    </style>
+
+    <style name="RulesFragmentTitle">
+        <item name="android:textSize">@dimen/rules_fragment_title_text</item>
+        <item name="android:textColor">@color/rules_fragment_title</item>
+        <item name="android:fontFamily">@font/meriendaone_regular</item>
+    </style>
+
+    <style name="RulesFragmentContent">
+        <item name="android:textColor">@color/rules_fragment_content</item>
+        <item name="android:textSize">@dimen/rules_fragment_content_text</item>
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="RulesFragmentCheckBox">
+        <item name="android:textColor">@color/rules_fragment_checkbox</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <!--Board fragment styles-->
+    <style name="BoardFragmentBlackboardPlayers">
+        <item name="android:fontFamily">@font/permanentmarker_regular</item>
+        <item name="android:textColor">@color/board_fragment_blackboard_text</item>
+        <item name="android:textSize">@dimen/board_fragment_blackboard_player_name_text</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+    <style name="BoardFragmentBlackboardTurn" parent="BoardFragmentBlackboardPlayers">
+        <item name="android:textSize">@dimen/board_fragment_blackboard_turn_text</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="BoardFragmentBlackboardNumberOfTokens">
+        <item name="android:fontFamily">@font/permanentmarker_regular</item>
+        <item name="android:textColor">@color/board_fragment_blackboard_text</item>
+        <item name="android:textSize">@dimen/board_fragment_blackboard_number_of_tokens_text</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+    <style name="BoardFragmentPauseTip">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:textSize">@dimen/board_fragment_pause_tip_text</item>
+    </style>
+
+    <style name="BoardFragmentTipsText">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:textSize">@dimen/board_fragment_pause_tip_text</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>

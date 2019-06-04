@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--General-->
+    <string name="app_name">Mice</string>
+
+    <!--Board fragment-->
+    <string name="board_fragment_placeholder_player_one">Prvi igrač</string>
+    <string name="board_fragment_placeholder_player_two">Drugi igrač</string>
+    <string name="board_fragment_pause_tip">Za povratak pritisni i drži</string>
+    <string name="board_fragment_tips_first_message">Za početak uzmi figuru iz korpe</string>
+    <string name="board_fragment_tips_second_message">Postavi ih gde želiš i pokušaj da napraviš MICU</string>
+    <string name="board_fragment_tips_third_message">Napravio si Micu, sada pojedi protivnika</string>
+    <string name="board_fragment_tips_fifth_message">Ako su samo tvoje figure na postolju, onda si ti POBEDNIK</string>
+    <string name="board_fragment_tips_fourth_message">Ako nemaš više figura u korpi, pomeraj ih</string>
+    <string name="board_fragment_tips_sixth_message">Nisu ti potrebna upustva, menu-pravila-čekiraj</string>
+    <string name="board_fragment_game_message">Dan kada budeš prestao da se takmičiš, je dan kada ćeš pobediti. Uživaj!</string>
+
+    <!--Menu fragment-->
+    <string name="menu_fragment_new_game">Nova igra</string>
+    <string name="menu_fragment_continue_game">Nastavi</string>
+    <string name="menu_fragment_players">Igrači</string>
+    <string name="menu_fragment_rules">Pravila</string>
+    <string name="menu_fragment_exit">Izađi</string>
+
+    <!--Names fragment-->
+    <string name="name_fragment_title">Imena igrača</string>
+    <string name="name_fragment_hint">Unesi ime igrača</string>
+
+    <!--Names fragment-->
+    <string name="rules_fragment_content">
+        \t\t\t\t\tMICA je jedna od najstarijih društvenih igara, koja se zahvaljujući svojoj jednostavnosti zadržala sve do današnjih dana. Igraju je dva igrača. Svaki od njih ima po 9 figura i naizmenično ih postavljaju na polja na tabli. Posle postavljanja svih 9 figura igrači naizmenično pomeraju svoje figure duž horizontala ili vertikala za po jedno polje. Cilj igre je dobiti MICU odnosno postaviti svoje tri figure po jednoj od vertikala ili horizontala (po dijagonali se ne važi). Tada igrač koji dobije MICU uzima bilo koju od figura, koja nije u MICI. Igra se sve dok jedan od igrača više nije u mogućnosti ni na koji način da napravi MICU.
+    </string>
+    <string name="rules_fragment_title">Pravila igre</string>
+    <string name="rules_fragment_checkbox">Prikaži upustva tokom igre</string>
+
+</resources>

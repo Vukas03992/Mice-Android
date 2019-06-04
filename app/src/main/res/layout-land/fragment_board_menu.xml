@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/message_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BoardFragmentPauseTip"
+        android:text="@string/board_fragment_pause_tip"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/image_one"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginEnd="@dimen/board_fragment_pause_tip_margin_end"
+        android:layout_marginTop="@dimen/board_fragment_pause_tip_margin_top"/>
+
+    <ImageView
+        android:id="@+id/image_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_touch"
+        android:alpha="0.5"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/message_one"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/board_fragment_pause_tip_image_margin_top"/>
+
+    <ImageView
+        android:id="@+id/board_fragment_menu_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_main"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/board_fragment_menu_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_frame_land"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/board_fragment_menu_sound"
+        android:layout_width="@dimen/board_fragment_menu_option_dimension"
+        android:layout_height="@dimen/board_fragment_menu_option_dimension"
+        android:background="@drawable/background_option"
+        android:src="@drawable/ic_sound"
+        android:scaleType="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:soundEffectsEnabled="false"
+
+        app:layout_constraintTop_toBottomOf="@id/board_fragment_menu_music"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/board_fragment_menu_exit"
+        android:layout_marginStart="@dimen/board_fragment_menu_option_sound_margin_bottom"
+        />
+
+    <ImageView
+        android:id="@+id/board_fragment_menu_exit"
+        android:layout_width="@dimen/board_fragment_menu_option_dimension"
+        android:layout_height="@dimen/board_fragment_menu_option_dimension"
+        android:background="@drawable/background_option"
+        android:src="@drawable/ic_exit"
+        android:scaleType="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:soundEffectsEnabled="false"
+
+        app:layout_constraintTop_toBottomOf="@id/board_fragment_menu_sound"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/board_fragment_menu_frame"
+        android:layout_marginStart="@dimen/board_fragment_menu_option_exit_margin_bottom"
+        />
+
+    <ImageView
+        android:id="@+id/board_fragment_menu_music"
+        android:layout_width="@dimen/board_fragment_menu_option_dimension"
+        android:layout_height="@dimen/board_fragment_menu_option_dimension"
+        android:background="@drawable/background_option"
+        android:src="@drawable/ic_music"
+        android:scaleType="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:soundEffectsEnabled="false"
+
+        app:layout_constraintTop_toTopOf="@id/board_fragment_menu_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/board_fragment_menu_sound"
+        android:layout_marginStart="@dimen/board_fragment_menu_option_music_margin_bottom"
+        />
+
+</android.support.constraint.ConstraintLayout>

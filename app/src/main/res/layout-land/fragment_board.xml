@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/board_fragment_blackboard_player_two"
+        android:layout_width="@dimen/board_fragment_blackboard_width"
+        android:layout_height="@dimen/board_fragment_blackboard_height"
+        android:background="@drawable/blackboard"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/board_fragment_playground"
+        app:layout_constraintBottom_toTopOf="@+id/board_fragment_blackboard_player_one"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/board_fragment_blackboard_margin_bottom_land"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:id="@+id/board_fragment_blackboard_player_two_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Player One"
+            style="@style/BoardFragmentBlackboardPlayers"
+
+            app:layout_constraintLeft_toRightOf="@id/board_fragment_basket_player_two"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/Board_fragment_blackboard_player_two_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Your Turn"
+            style="@style/BoardFragmentBlackboardTurn"
+
+            app:layout_constraintLeft_toRightOf="@+id/board_fragment_basket_player_two"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/board_fragment_blackboard_player_two_name"/>
+
+        <TextView
+            android:id="@+id/board_fragment_blackboard_number_of_tokens_player_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BoardFragmentBlackboardNumberOfTokens"
+            tools:text="more: 9"
+
+            app:layout_constraintLeft_toLeftOf="@+id/board_fragment_basket_player_two"
+            app:layout_constraintRight_toRightOf="@id/board_fragment_basket_player_two"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/board_fragment_blackboard_number_of_tokens_text_margin_top"/>
+
+        <ImageView
+            android:id="@+id/board_fragment_basket_player_two"
+            android:layout_width="@dimen/board_fragment_basket_width"
+            android:layout_height="@dimen/board_fragment_basket_height"
+            android:tag="basketTwo"
+            android:src="@drawable/basket_player_two"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/board_fragment_blackboard_number_of_tokens_player_two"
+
+            android:layout_marginStart="@dimen/board_fragment_basket_margin_side"
+            android:layout_marginBottom="@dimen/board_fragment_basket_margin_bottom"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--Playground-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/board_fragment_playground"
+        android:layout_width="@dimen/board_fragment_playground_dimension"
+        android:layout_height="@dimen/board_fragment_playground_dimension"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/board_fragment_bottom_toolbar"
+        app:layout_constraintRight_toLeftOf="@+id/board_fragment_blackboard_player_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/playground"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--North_C-->
+        <ImageView
+            android:id="@+id/north_C_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="0_0"
+            android:clickable="true"
+            android:focusable="true"
+            tools:src="@drawable/ic_player_two"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"/>
+
+        <ImageView
+            android:id="@+id/north_C_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="0_3"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/north_C_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="0_6"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_one" />
+
+
+        <!--North-B-->
+        <ImageView
+            android:id="@+id/north_B_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="1_1"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/north_B_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="1_3"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/north_B_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="1_5"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_one" />
+
+        <!--North-A-->
+        <ImageView
+            android:id="@+id/north_A_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="2_2"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/north_A_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="2_3"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/north_A_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="2_4"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_one" />
+
+        <!--South-C-->
+        <ImageView
+            android:id="@+id/south_C_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="6_0"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/south_C_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="6_3"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/south_C_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="6_6"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_one" />
+
+
+        <!--North-B-->
+        <ImageView
+            android:id="@+id/south_B_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="5_1"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/south_B_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="5_3"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/south_B_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="5_5"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_one" />
+
+        <!--South-A-->
+        <ImageView
+            android:id="@+id/south_A_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="4_2"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/south_A_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="4_3"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/south_A_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="4_4"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_one" />
+
+        <!--Center-Left-->
+        <ImageView
+            android:id="@+id/center_left_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="3_0"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/center_left_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="3_1"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/center_left_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="3_2"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/center_right_1"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="3_6"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_small"
+            tools:src="@drawable/ic_player_two" />
+
+        <ImageView
+            android:id="@+id/center_right_2"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="3_5"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_medium"
+            tools:src="@drawable/ic_player_one" />
+
+        <ImageView
+            android:id="@+id/center_right_3"
+            android:layout_width="@dimen/board_fragment_token_dimension"
+            android:layout_height="@dimen/board_fragment_token_dimension"
+            android:scaleType="center"
+            android:tag="3_4"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/board_fragment_token_margin_large"
+            tools:src="@drawable/ic_player_one" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/board_fragment_blackboard_player_one"
+        android:layout_width="@dimen/board_fragment_blackboard_width"
+        android:layout_height="@dimen/board_fragment_blackboard_height"
+        android:background="@drawable/blackboard"
+
+        app:layout_constraintTop_toBottomOf="@+id/board_fragment_blackboard_player_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/board_fragment_playground"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/board_fragment_blackboard_player_one_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Player One"
+            style="@style/BoardFragmentBlackboardPlayers"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/player_one_basket"/>
+
+        <TextView
+            android:id="@+id/board_fragment_blackboard_player_one_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Your Turn"
+            style="@style/BoardFragmentBlackboardTurn"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/player_one_basket"
+            app:layout_constraintTop_toBottomOf="@id/board_fragment_blackboard_player_one_name"/>
+
+        <TextView
+            android:id="@+id/board_fragment_blackboard_number_of_tokens_player_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BoardFragmentBlackboardNumberOfTokens"
+            tools:text="more: 9"
+
+            app:layout_constraintLeft_toLeftOf="@+id/player_one_basket"
+            app:layout_constraintRight_toRightOf="@id/player_one_basket"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/board_fragment_blackboard_number_of_tokens_text_margin_top"/>
+
+        <ImageView
+            android:id="@+id/player_one_basket"
+            android:layout_width="@dimen/board_fragment_basket_width"
+            android:layout_height="@dimen/board_fragment_basket_height"
+            android:tag="basketOne"
+            android:src="@drawable/basket_player_one"
+
+            app:layout_constraintTop_toBottomOf="@id/board_fragment_blackboard_number_of_tokens_player_one"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginBottom="@dimen/board_fragment_basket_margin_bottom"
+            android:layout_marginEnd="@dimen/board_fragment_basket_margin_side"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/board_fragment_bottom_toolbar"
+        style="@style/BoardFragmentToolbar"
+        android:layout_width="@dimen/toolbar_footer_height"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/board_fragment_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:clickable="true"
+            android:focusable="true"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/board_fragment_pause"/>
+
+        <ImageView
+            android:id="@+id/board_fragment_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pause"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:clickable="true"
+            android:focusable="true"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/board_fragment_menu"
+            app:layout_constraintBottom_toTopOf="@+id/board_fragment_undo" />
+
+        <ImageView
+            android:id="@+id/board_fragment_undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_undo"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:clickable="true"
+            android:focusable="true"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/board_fragment_pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/board_fragment_movable"
+        android:layout_width="@dimen/board_fragment_token_dimension"
+        android:layout_height="@dimen/board_fragment_token_dimension"
+        android:scaleType="center"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_player_two" />
+
+    <FrameLayout
+        android:id="@+id/board_fragment_pause_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_pause"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

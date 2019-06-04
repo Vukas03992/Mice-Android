@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/name_fragment_background">
+
+    <ImageView
+        android:id="@+id/name_fragment_logo"
+        android:layout_width="@dimen/name_fragment_logo_width"
+        android:layout_height="@dimen/name_fragment_logo_height"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/name_fragment_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/name_fragment_ic_player_one"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="@dimen/name_fragment_logo_margin_top"
+        android:layout_marginEnd="@dimen/name_fragment_logo_margin_end"/>
+
+    <TextView
+        android:id="@+id/name_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_fragment_title"
+        style="@style/NameFragmentTitle"
+
+        app:layout_constraintBottom_toTopOf="@+id/name_fragment_ic_player_one"
+        app:layout_constraintLeft_toRightOf="@+id/name_fragment_logo"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="@dimen/name_fragment_title_margin_bottom"/>
+
+    <ImageView
+        android:id="@+id/name_fragment_ic_player_one"
+        android:layout_width="@dimen/name_fragment_ic_width"
+        android:layout_height="@dimen/name_fragment_ic_height"
+        android:src="@drawable/player_one"
+        android:scaleType="centerInside"
+
+        app:layout_constraintTop_toBottomOf="@+id/name_fragment_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/name_fragment_ic_player_two"
+        android:layout_marginTop="@dimen/name_fragment_ic_player_margin_top"
+        android:layout_marginStart="@dimen/name_fragment_ic_player_margin_start"/>
+
+    <EditText
+        android:id="@+id/name_fragment_edit_text_player_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NameFragmentPlayerName"
+        android:hint="@string/name_fragment_hint"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+
+        app:layout_constraintTop_toBottomOf="@+id/name_fragment_logo"
+        app:layout_constraintLeft_toRightOf="@+id/name_fragment_ic_player_one"
+        android:layout_marginTop="@dimen/name_fragment_player_name_margin_top"/>
+
+    <ImageView
+        android:id="@+id/name_fragment_ic_player_two"
+        android:layout_width="@dimen/name_fragment_ic_width"
+        android:layout_height="@dimen/name_fragment_ic_height"
+        android:src="@drawable/player_two"
+        android:scaleType="centerInside"
+
+        app:layout_constraintTop_toBottomOf="@+id/name_fragment_ic_player_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/name_fragment_ic_player_margin_top"
+        android:layout_marginStart="@dimen/name_fragment_ic_player_margin_start"/>
+
+    <EditText
+        android:id="@+id/names_edit_text_player_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NameFragmentPlayerName"
+        android:hint="@string/name_fragment_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+
+        app:layout_constraintTop_toBottomOf="@+id/name_fragment_ic_player_one"
+        app:layout_constraintLeft_toRightOf="@+id/name_fragment_ic_player_one"
+        android:layout_marginTop="@dimen/name_fragment_player_name_margin_top"/>
+
+</android.support.constraint.ConstraintLayout>

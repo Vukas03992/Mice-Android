@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--General-->
+    <color name="primary">#795548</color>
+    <color name="primary_dark">#5D4037</color>
+    <color name="primary_light">#D7CCC8</color>
+    <color name="accent">#FFEB3B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!--ActionBar-->
+    <color name="action_bar_title">#ece7e3</color>
+
+    <!--Board fragment-->
+    <color name="turn_section_text">#d7ccc8</color>
+    <color name="board_fragment_blackboard_text">#d7ccc8</color>
+
+    <!--Menu fragment-->
+    <color name="menu_fragment_text">#d7ccc8</color>
+
+    <!--Names fragment-->
+    <color name="name_fragment_title">#d7ccc8</color>
+    <color name="name_fragment_player_name_edit_text">#d7ccc8</color>
+    <color name="name_fragment_player_name_edit_text_hint">#5c534e</color>
+    <color name="name_fragment_background">#96000000</color>
+
+    <!--Rules fragment-->
+    <color name="rules_fragment_title">#d7ccc8</color>
+    <color name="rules_fragment_content">#d7ccc8</color>
+    <color name="rules_fragment_checkbox">#d7ccc8</color>
+
+</resources>

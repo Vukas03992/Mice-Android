@@ -1,0 +1,36 @@
+<resources>
+
+    <!--General-->
+    <string name="app_name">Mice</string>
+
+    <!--Board fragment-->
+    <string name="board_fragment_placeholder_player_one">Player One</string>
+    <string name="board_fragment_placeholder_player_two">Player Two</string>
+    <string name="board_fragment_pause_tip">To return press and hold</string>
+    <string name="board_fragment_tips_first_message">To start take token from basket</string>
+    <string name="board_fragment_tips_second_message">Put them where ever you want and try to make MICE</string>
+    <string name="board_fragment_tips_third_message">You have made the Mice, now take opponent\'s token</string>
+    <string name="board_fragment_tips_fifth_message">If you are the only player in the field, you are the WINNER</string>
+    <string name="board_fragment_tips_fourth_message">If you don\'t have tokens in basket, move them</string>
+    <string name="board_fragment_tips_sixth_message">Don\'t want to see this anymore, menu-rules-check</string>
+    <string name="board_fragment_game_message">The day you stop competing is the day you win. Enjoy!</string>
+
+    <!--Menu fragment-->
+    <string name="menu_fragment_new_game">New game</string>
+    <string name="menu_fragment_continue_game">Continue</string>
+    <string name="menu_fragment_players">Players</string>
+    <string name="menu_fragment_rules">Rules</string>
+    <string name="menu_fragment_exit">Exit</string>
+
+    <!--Names fragment-->
+    <string name="name_fragment_title">Names of the players</string>
+    <string name="name_fragment_hint">Insert name</string>
+
+    <!--Rules fragment-->
+    <string name="rules_fragment_content">
+        \t\t\t\t\tMICA is one of the oldest social games that has stayed popular until today thanks to her simplicity. It is played by two players. Each of them has nine tokens which they place intermittently on the fields on the playing board. After placing tokens on the playing board, the players move one after the other their tokens vertically or horizontally only one field at a time. Playing diagonally does not count. At the moment where a player scores MICA, he or she takes any of the opponent’s tokens which is not in MICA. The game is played until one of the players is completely unable to score MICA.
+    </string>
+    <string name="rules_fragment_title">Rules of the game</string>
+    <string name="rules_fragment_checkbox">Show tips in the game</string>
+
+</resources>

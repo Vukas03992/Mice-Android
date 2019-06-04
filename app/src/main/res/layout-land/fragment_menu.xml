@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_main"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/options"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/options"
+        android:layout_width="@dimen/menu_fragment_options_width_land"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/main_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/menu_fragment_options_margin_start">
+
+        <TextView
+            android:id="@+id/menu_fragment_new_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_fragment_new_game"
+            style="@style/MenuFragmentMenuItem"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <View
+            android:id="@+id/menu_fragment_button_new_game"
+            android:layout_width="@dimen/menu_fragment_button_width"
+            android:layout_height="@dimen/menu_fragment_button_height"
+            android:background="@drawable/player_two"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:soundEffectsEnabled="false"
+
+            app:layout_constraintLeft_toLeftOf="@+id/menu_fragment_new_game"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_fragment_new_game"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="100"
+            />
+
+        <TextView
+            android:id="@+id/menu_fragment_continue_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_fragment_continue_game"
+            style="@style/MenuFragmentMenuItem"
+
+            app:layout_constraintTop_toBottomOf="@+id/menu_fragment_new_game"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/menu_fragment_menu_item_margin_top"/>
+
+        <View
+            android:id="@+id/menu_fragment_button_continue_game"
+            android:layout_width="@dimen/menu_fragment_button_width"
+            android:layout_height="@dimen/menu_fragment_button_height"
+            android:background="@drawable/player_one"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:soundEffectsEnabled="false"
+
+            app:layout_constraintLeft_toLeftOf="@+id/menu_fragment_continue_game"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_fragment_continue_game"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="100"
+            />
+
+        <TextView
+            android:id="@+id/menu_fragment_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_fragment_players"
+            style="@style/MenuFragmentMenuItem"
+
+            app:layout_constraintTop_toBottomOf="@+id/menu_fragment_continue_game"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/menu_fragment_menu_item_margin_top"/>
+
+        <View
+            android:id="@+id/menu_fragment_button_players"
+            android:layout_width="@dimen/menu_fragment_button_width"
+            android:layout_height="@dimen/menu_fragment_button_height"
+            android:background="@drawable/player_two"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:soundEffectsEnabled="false"
+
+            app:layout_constraintLeft_toLeftOf="@+id/menu_fragment_players"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_fragment_players"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="100"/>
+
+        <TextView
+            android:id="@+id/menu_fragment_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_fragment_rules"
+            style="@style/MenuFragmentMenuItem"
+
+            app:layout_constraintTop_toBottomOf="@+id/menu_fragment_players"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/menu_fragment_menu_item_margin_top"/>
+
+        <View
+            android:id="@+id/menu_fragment_button_rules"
+            android:layout_width="@dimen/menu_fragment_button_width"
+            android:layout_height="@dimen/menu_fragment_button_height"
+            android:background="@drawable/player_one"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:soundEffectsEnabled="false"
+
+            app:layout_constraintLeft_toLeftOf="@+id/menu_fragment_rules"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_fragment_rules"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="100"/>
+
+        <TextView
+            android:id="@+id/menu_fragment_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_fragment_exit"
+            style="@style/MenuFragmentMenuItem"
+
+            app:layout_constraintTop_toBottomOf="@+id/menu_fragment_rules"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/menu_fragment_menu_item_margin_top"/>
+
+        <View
+            android:id="@+id/menu_fragment_button_exit"
+            android:layout_width="@dimen/menu_fragment_button_width"
+            android:layout_height="@dimen/menu_fragment_button_height"
+            android:background="@drawable/player_two"
+            android:stateListAnimator="@animator/button_main_fragment"
+            android:soundEffectsEnabled="false"
+
+            app:layout_constraintLeft_toLeftOf="@+id/menu_fragment_exit"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_fragment_exit"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="100" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

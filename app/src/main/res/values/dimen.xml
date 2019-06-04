@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Header and footer-->
+    <dimen name="toolbar_header_elevation">8dp</dimen>
+    <dimen name="toolbar_footer_height">32dp</dimen>
+
+    <!--Menu fragment-->
+    <dimen name="menu_fragment_button_width">52dp</dimen>
+    <dimen name="menu_fragment_button_height">31dp</dimen>
+    <dimen name="menu_fragment_button_margin_portrait">18dp</dimen>
+
+    <dimen name="menu_fragment_margin_side">56dp</dimen>
+
+    <dimen name="menu_fragment_text">28sp</dimen>
+
+    <dimen name="menu_fragment_menu_item_margin_top">8dp</dimen>
+
+    <dimen name="menu_fragment_options_width_land">250dp</dimen>
+    <dimen name="menu_fragment_options_margin_start">10dp</dimen>
+
+
+    <!--Playground-->
+    <dimen name="board_fragment_playground_dimension_land">320dp</dimen>
+
+    <dimen name="board_fragment_token_dimension">40dp</dimen>
+    <dimen name="board_fragment_token_margin_small">30dp</dimen>
+    <dimen name="board_fragment_token_margin_medium">62dp</dimen>
+    <dimen name="board_fragment_token_margin_large">96dp</dimen>
+
+    <dimen name="board_fragment_basket_height">34dp</dimen>
+    <dimen name="board_fragment_basket_width">66dp</dimen>
+    <dimen name="board_fragment_basket_margin_bottom">5dp</dimen>
+    <dimen name="board_fragment_basket_margin_side">5dp</dimen>
+
+    <dimen name="board_fragment_blackboard_width">307dp</dimen>
+    <dimen name="board_fragment_blackboard_height">61dp</dimen>
+    <dimen name="board_fragment_blackboard_two_margin_bottom">346dp</dimen>
+    <dimen name="board_fragment_blackboard_margin_bottom_land">30dp</dimen>
+    <dimen name="board_fragment_blackboard_one_margin_top">342dp</dimen>
+    <dimen name="board_fragment_blackboard_player_name_text">18sp</dimen>
+    <dimen name="board_fragment_blackboard_number_of_tokens_text">12sp</dimen>
+    <dimen name="board_fragment_blackboard_number_of_tokens_text_margin_top">3dp</dimen>
+    <dimen name="board_fragment_blackboard_turn_text">15sp</dimen>
+
+    <dimen name="board_fragment_menu_option_dimension">40dp</dimen>
+    <dimen name="board_fragment_menu_option_sound_margin_bottom">70dp</dimen>
+    <dimen name="board_fragment_menu_option_exit_margin_bottom">50dp</dimen>
+    <dimen name="board_fragment_menu_option_music_margin_bottom">50dp</dimen>
+
+    <dimen name="board_fragment_pause_tip_margin_top">10dp</dimen>
+    <dimen name="board_fragment_pause_tip_margin_end">5dp</dimen>
+    <dimen name="board_fragment_pause_tip_image_margin_top">10dp</dimen>
+    <dimen name="board_fragment_pause_tip_text">12sp</dimen>
+
+    <dimen name="board_fragment_tips_message_margin_bottom">32dp</dimen>
+    <dimen name="board_fragment_tips_basket_margin_bottom">60dp</dimen>
+    <dimen name="board_fragment_tips_basket_margin_side">32dp</dimen>
+    <dimen name="board_fragment_tips_arrow_margin_bottom">35dp</dimen>
+    <dimen name="board_fragment_tips_arrow_margin_side">10dp</dimen>
+    <dimen name="board_fragment_tips_exit_message_margin_top">10dp</dimen>
+    <dimen name="board_fragment_tips_exit_message_margin_end">5dp</dimen>
+    <dimen name="board_fragment_tips_exit_image_margin_top">10dp</dimen>
+    <dimen name="board_fragment_tips_message_text">12sp</dimen>
+
+    <!--Names fragment-->
+    <dimen name="name_fragment_logo_width">33dp</dimen>
+    <dimen name="name_fragment_logo_height">13dp</dimen>
+    <dimen name="name_fragment_logo_margin_top">12dp</dimen>
+    <dimen name="name_fragment_logo_margin_end">8dp</dimen>
+
+    <dimen name="name_fragment_title_text">20sp</dimen>
+    <dimen name="name_fragment_title_margin_bottom">44dp</dimen>
+
+    <dimen name="name_fragment_ic_player_margin_start">28dp</dimen>
+    <dimen name="name_fragment_ic_player_margin_end_land">40dp</dimen>
+    <dimen name="name_fragment_ic_width">76dp</dimen>
+    <dimen name="name_fragment_ic_height">47dp</dimen>
+    <dimen name="name_fragment_ic_player_margin_top">52dp</dimen>
+
+    <dimen name="name_fragment_player_name_text">33sp</dimen>
+    <dimen name="name_fragment_player_name_margin_top">48dp</dimen>
+
+    <!--Rules fragment-->
+    <dimen name="rules_fragment_logo_width">33dp</dimen>
+    <dimen name="rules_fragment_logo_height">13dp</dimen>
+    <dimen name="rules_fragment_logo_margin_top">26dp</dimen>
+    <dimen name="rules_fragment_logo_margin_end">8dp</dimen>
+
+    <dimen name="rules_fragment_title_text">30sp</dimen>
+    <dimen name="rules_fragment_title_margin_bottom">38dp</dimen>
+
+    <dimen name="rules_fragment_scroll_margin_side">32dp</dimen>
+    <dimen name="rules_fragment_scroll_margin_top">96dp</dimen>
+    <dimen name="rules_fragment_scroll_margin_bottom">64dp</dimen>
+
+    <dimen name="rules_fragment_content_text">20sp</dimen>
+
+    <dimen name="rules_fragment_checkbox_margin_start">32dp</dimen>
+
+</resources>
